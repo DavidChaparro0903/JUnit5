@@ -52,12 +52,13 @@ public class TestRomanos {
 	        
 	    }
 		
+		@Test
 		// Prueba con números centenas 
 	    public void testConvierteCentenas() {
 			String romano= "";
 			
 			romano = convertidor2.convertirDecARomanos(923);
-	        assertEquals("CMXX", romano);
+	        assertEquals("CMXXIII", romano);
 	        
 			romano = convertidor2.convertirDecARomanos(517);
 	        assertEquals("DXVII", romano);
@@ -73,13 +74,15 @@ public class TestRomanos {
 	      
 	    }
 	    
+		@Test
+		// Prueba con números miles
 	    public void testConvierteMiles() {
 			String romano= "";
 			
 			romano = convertidor2.convertirDecARomanos(1617);
 	        assertEquals("MDCXVII", romano);
 	        
-			romano = convertidor2.convertirDecARomanos(100);
+			romano = convertidor2.convertirDecARomanos(1000);
 	        assertEquals("M", romano);
 						
 

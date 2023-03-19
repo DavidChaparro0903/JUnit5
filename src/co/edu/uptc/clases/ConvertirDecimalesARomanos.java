@@ -63,5 +63,10 @@ public class ConvertirDecimalesARomanos {
 	      }
 	      return romano;
 	}
+	
+	public static void main(String[] args) {
+		ConvertirDecimalesARomanos p = new ConvertirDecimalesARomanos();
+		System.out.println(p.convertirDecARomanos(923));
+	}
 
 }
